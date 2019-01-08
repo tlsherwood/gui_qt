@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5 import uic
-# this is nothing, just playing with git
+
 Ui_MainWindow, QtBaseClass = uic.loadUiType('tax_calculator.ui')
 
 class MyApp(QMainWindow):
