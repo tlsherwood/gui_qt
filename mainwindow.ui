@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>870</width>
-    <height>568</height>
+    <width>854</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>MainWindow</string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>721</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
-      <width>711</width>
+      <x>30</x>
+      <y>70</y>
+      <width>721</width>
       <height>25</height>
      </rect>
     </property>
@@ -58,38 +44,49 @@
     </layout>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>854</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections>
   <connection>
    <sender>pushButton</sender>
    <signal>clicked()</signal>
-   <receiver>Dialog</receiver>
+   <receiver>MainWindow</receiver>
    <slot>browseSlot()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>695</x>
-     <y>135</y>
+     <x>705</x>
+     <y>101</y>
     </hint>
     <hint type="destinationlabel">
-     <x>760</x>
-     <y>173</y>
+     <x>772</x>
+     <y>123</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>lineEdit</sender>
    <signal>returnPressed()</signal>
-   <receiver>Dialog</receiver>
+   <receiver>MainWindow</receiver>
    <slot>returnPressedSlot()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>336</x>
-     <y>134</y>
+     <x>345</x>
+     <y>103</y>
     </hint>
     <hint type="destinationlabel">
-     <x>758</x>
-     <y>221</y>
+     <x>772</x>
+     <y>159</y>
     </hint>
    </hints>
   </connection>
